@@ -4,9 +4,14 @@
 }
 
 #header-nav {
-    background-color: green;
+    background-color: rgb(22, 189, 22);
     border-radius: 0;
     border: 0;
+}
+
+.navbar {
+    position: relative;
+    min-height: 80px;
 }
 
 .navbar a:hover,
@@ -14,11 +19,21 @@
     text-decoration: none;
 }
 
+#main {
+    background-color: chartreuse;
+    width: 95%;
+}
+
+#brand {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h1 {
-    text-align: center;
     font-size: 175%;
     font-weight: bold;
-    margin: 10px 0px 10px;
+    margin: 10px 0px 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2 {
@@ -26,19 +41,56 @@ h2 {
     font-size: 125%;
     font-weight: bold;
     margin: 10px 0px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+
+#nav-list a {
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    background-position: center;
+    background-color: rgb(22, 189, 22);
+}
+
+#nav-list a:hover {
+    background-color: cornsilk;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
 }
 
 
-/* Desktop */
+/* Large device */
 
-.col-md-12 {}
-
-
-/* Tablet */
-
-.col-sm-12 {}
+@media (min-width: 1200 px) {}
 
 
-/* Mobile */
+/* Medium device */
 
-.col-xs-12 {}
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Small device */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+
+/* Extra small device */
+
+@media (max-width: 767px) {}
