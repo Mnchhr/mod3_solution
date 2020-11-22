@@ -19,8 +19,18 @@
     text-decoration: none;
 }
 
-#main {
+.text {
     background-color: chartreuse;
+    padding: 10px 20px 10px;
+    margin: 15px 0px 15px;
+}
+
+#toTop {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+#main {
     width: 95%;
 }
 
